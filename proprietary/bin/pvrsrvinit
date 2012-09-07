@@ -1,0 +1,11 @@
+#!/system/bin/sh
+
+# Run original pvrsrvinit
+/system/bin/pvrsrviniter&
+
+cat /dev/input/event1 > /dev/keycheck&
+sleep 3
+kill -9 $!
+if [ -s /dev/keycheck ]
+	then reboot recovery
+fi
