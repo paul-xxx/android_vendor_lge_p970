@@ -17,59 +17,21 @@
 # Prebuilt libraries that are needed to build open-source libraries
 
 PRODUCT_COPY_FILES += \
-    vendor/lge/p970/proprietary/usr/idc/Hookkey.idc:system/usr/idc/Hookkey.idc \
-    vendor/lge/p970/proprietary/usr/idc/hub_synaptics_touch.idc:system/usr/idc/hub_synaptics_touch.idc \
-    vendor/lge/p970/proprietary/usr/idc/osp-input.idc:system/usr/idc/osp-input.idc \
-    vendor/lge/p970/proprietary/usr/idc/TWL4030_Keypad.idc:system/usr/idc/TWL4030_Keypad.idc \
-    vendor/lge/p970/proprietary/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/Hookkey.kl:system/usr/keylayout/Hookkey.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/hub_synaptics_touch.kl:system/usr/keylayout/hub_synaptics_touch.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/lgosp-hid.kl:system/usr/keylayout/lgosp-hid.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/osp-input.kl:system/usr/keylayout/osp-input.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/twl4030-keypad.kl:system/usr/keylayout/twl4030-keypad.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/twl4030_pwrbutton.kl:system/usr/keylayout/twl4030_pwrbutton.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/TWL4030_Keypad.kl:system/usr/keylayout/TWL4030_Keypad.kl \
     vendor/lge/p970/proprietary/app/RootExplorer.apk:system/app/RootExplorer.apk \
+    vendor/lge/p970/proprietary/bin/cexec.out:system/bin/cexec.out \
+    vendor/lge/p970/proprietary/bin/fw3a_core:system/bin/fw3a_core \
+    vendor/lge/p970/proprietary/bin/glgps:system/bin/glgps \
     vendor/lge/p970/proprietary/bin/immvibed:system/bin/immvibed \
+    vendor/lge/p970/proprietary/bin/init.vsnet:system/bin/init.vsnet \
     vendor/lge/p970/proprietary/bin/pvrsrvctl:system/bin/pvrsrvctl \
     vendor/lge/p970/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit \
     vendor/lge/p970/proprietary/bin/pvrsrviniter:system/bin/pvrsrviniter \
-    vendor/lge/p970/proprietary/lib/egl/libEGL_POWERVR_SGX530_125.so:system/lib/egl/libEGL_POWERVR_SGX530_125.so \
-    vendor/lge/p970/proprietary/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
-    vendor/lge/p970/proprietary/lib/egl/libGLESv2_POWERVR_SGX530_125.so:system/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
-    vendor/lge/p970/proprietary/lib/hw/gralloc.omap3.so:system/lib/hw/gralloc.omap3.so \
-    vendor/lge/p970/proprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so \
-    vendor/lge/p970/proprietary/lib/libIMGegl.so:system/lib/libIMGegl.so \
-    vendor/lge/p970/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
-    vendor/lge/p970/proprietary/lib/libpvr2d.so:system/lib/libpvr2d.so \
-    vendor/lge/p970/proprietary/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
-    vendor/lge/p970/proprietary/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
-    vendor/lge/p970/proprietary/lib/libsrv_init.so:system/lib/libsrv_init.so \
-    vendor/lge/p970/proprietary/lib/libsrv_um.so:system/lib/libsrv_um.so \
-    vendor/lge/p970/proprietary/lib/libusc.so:system/lib/libusc.so \
-    vendor/lge/p970/proprietary/bin/init.vsnet:system/bin/init.vsnet \
     vendor/lge/p970/proprietary/bin/rild:system/bin/rild \
     vendor/lge/p970/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
-    vendor/lge/p970/proprietary/lib/lge-ril.so:system/lib/lge-ril.so \
-    vendor/lge/p970/proprietary/lib/libini.so:system/lib/libini.so \
-    vendor/lge/p970/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/lge/p970/proprietary/bin/glgps:system/bin/glgps \
+    vendor/lge/p970/proprietary/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd:system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd \
     vendor/lge/p970/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/lge/p970/proprietary/etc/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml \
     vendor/lge/p970/proprietary/etc/ipc_channels.config:system/etc/ipc_channels.config \
-    vendor/lge/p970/proprietary/lib/hw/gps.omap3.so:system/lib/hw/gps.omap3.so \
-    vendor/lge/p970/proprietary/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd:system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd \
-    vendor/lge/p970/proprietary/lib/firmware/fmc_init_1273.1.bts:system/lib/firmware/fmc_init_1273.1.bts \
-    vendor/lge/p970/proprietary/lib/firmware/fmc_init_1273.2.bts:system/lib/firmware/fmc_init_1273.2.bts \
-    vendor/lge/p970/proprietary/lib/firmware/fm_rx_init_1273.1.bts:system/lib/firmware/fm_rx_init_1273.1.bts \
-    vendor/lge/p970/proprietary/lib/firmware/fm_rx_init_1273.2.bts:system/lib/firmware/fm_rx_init_1273.2.bts \
-    vendor/lge/p970/proprietary/lib/firmware/fm_tx_init_1273.1.bts:system/lib/firmware/fm_tx_init_1273.1.bts \
-    vendor/lge/p970/proprietary/lib/firmware/fm_tx_init_1273.2.bts:system/lib/firmware/fm_tx_init_1273.2.bts \
-    vendor/lge/p970/proprietary/lib/firmware/TIInit_7.1.24.bts:system/lib/firmware/TIInit_7.1.24.bts \
-    vendor/lge/p970/proprietary/lib/firmware/TIInit_7.1.24.bts.PM.bts:system/lib/firmware/TIInit_7.1.24.bts.PM.bts \
-    vendor/lge/p970/proprietary/lib/firmware/TIInit_7.2.31.bts:system/lib/firmware/TIInit_7.2.31.bts \
-    vendor/lge/p970/proprietary/bin/cexec.out:system/bin/cexec.out \
-    vendor/lge/p970/proprietary/bin/fw3a_core:system/bin/fw3a_core \
     vendor/lge/p970/proprietary/lib/dsp/720p_divx_mp4vdec_sn.dll64P:system/lib/dsp/720p_divx_mp4vdec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/720p_h264vdec_sn.dll64P:system/lib/dsp/720p_h264vdec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/720p_h264venc_sn.dll64P:system/lib/dsp/720p_h264venc_sn.dll64P \
@@ -121,14 +83,46 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/dsp/wmadec_sn.dll64P:system/lib/dsp/wmadec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/wmv9dec_sn.dll64P:system/lib/dsp/wmv9dec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/yuvconvert.l64p:system/lib/dsp/yuvconvert.l64p \
+    vendor/lge/p970/proprietary/lib/egl/libEGL_POWERVR_SGX530_125.so:system/lib/egl/libEGL_POWERVR_SGX530_125.so \
+    vendor/lge/p970/proprietary/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
+    vendor/lge/p970/proprietary/lib/egl/libGLESv2_POWERVR_SGX530_125.so:system/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
+    vendor/lge/p970/proprietary/lib/firmware/fmc_init_1273.1.bts:system/lib/firmware/fmc_init_1273.1.bts \
+    vendor/lge/p970/proprietary/lib/firmware/fmc_init_1273.2.bts:system/lib/firmware/fmc_init_1273.2.bts \
+    vendor/lge/p970/proprietary/lib/firmware/fm_rx_init_1273.1.bts:system/lib/firmware/fm_rx_init_1273.1.bts \
+    vendor/lge/p970/proprietary/lib/firmware/fm_rx_init_1273.2.bts:system/lib/firmware/fm_rx_init_1273.2.bts \
+    vendor/lge/p970/proprietary/lib/firmware/fm_tx_init_1273.1.bts:system/lib/firmware/fm_tx_init_1273.1.bts \
+    vendor/lge/p970/proprietary/lib/firmware/fm_tx_init_1273.2.bts:system/lib/firmware/fm_tx_init_1273.2.bts \
+    vendor/lge/p970/proprietary/lib/firmware/TIInit_7.1.24.bts:system/lib/firmware/TIInit_7.1.24.bts \
+    vendor/lge/p970/proprietary/lib/firmware/TIInit_7.1.24.bts.PM.bts:system/lib/firmware/TIInit_7.1.24.bts.PM.bts \
+    vendor/lge/p970/proprietary/lib/firmware/TIInit_7.2.31.bts:system/lib/firmware/TIInit_7.2.31.bts \
+    vendor/lge/p970/proprietary/lib/hw/gps.omap3.so:system/lib/hw/gps.omap3.so \
+    vendor/lge/p970/proprietary/lib/hw/gralloc.omap3.so:system/lib/hw/gralloc.omap3.so \
+    vendor/lge/p970/proprietary/lib/hw/sensors.omap3.so:system/lib/hw/sensors.omap3.so \
+    vendor/lge/p970/proprietary/lib/lge-ril.so:system/lib/lge-ril.so \
     vendor/lge/p970/proprietary/lib/libaffw_2.0.so:system/lib/libaffw_2.0.so \
     vendor/lge/p970/proprietary/lib/libaf_lg_2.0.so:system/lib/libaf_lg_2.0.so \
+    vendor/lge/p970/proprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so \
+    vendor/lge/p970/proprietary/lib/libIMGegl.so:system/lib/libIMGegl.so \
+    vendor/lge/p970/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
+    vendor/lge/p970/proprietary/lib/libini.so:system/lib/libini.so \
+    vendor/lge/p970/proprietary/lib/libmllite.so:system/lib/libmllite.so \
+    vendor/lge/p970/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
+    vendor/lge/p970/proprietary/lib/libmpl.so:system/lib/libmpl.so \
     vendor/lge/p970/proprietary/lib/libOMX.ITTIAM.MP3.decode.so:system/lib/libOMX.ITTIAM.MP3.decode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.720P.Decoder.so:system/lib/libOMX.TI.720P.Decoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.720P.Encoder.so:system/lib/libOMX.TI.720P.Encoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.h264.splt.Encoder.so:system/lib/libOMX.TI.h264.splt.Encoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.mp4.splt.Encoder.so:system/lib/libOMX.TI.mp4.splt.Encoder.so \
-    vendor/lge/p970/proprietary/lib/hw/sensors.omap3.so:system/lib/hw/sensors.omap3.so \
-    vendor/lge/p970/proprietary/lib/libmllite.so:system/lib/libmllite.so \
-    vendor/lge/p970/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
-    vendor/lge/p970/proprietary/lib/libmpl.so:system/lib/libmpl.so
+    vendor/lge/p970/proprietary/lib/libpvr2d.so:system/lib/libpvr2d.so \
+    vendor/lge/p970/proprietary/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
+    vendor/lge/p970/proprietary/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
+    vendor/lge/p970/proprietary/lib/lib_R2VS_ARM_GA_Library_for_Aries.so:system/lib/lib_R2VS_ARM_GA_Library_for_Aries.so \
+    vendor/lge/p970/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/lge/p970/proprietary/lib/libsrv_init.so:system/lib/libsrv_init.so \
+    vendor/lge/p970/proprietary/lib/libsrv_um.so:system/lib/libsrv_um.so \
+    vendor/lge/p970/proprietary/lib/libusc.so:system/lib/libusc.so \
+    vendor/lge/p970/proprietary/usr/idc/hub_synaptics_touch.idc:system/usr/idc/hub_synaptics_touch.idc \
+    vendor/lge/p970/proprietary/usr/keylayout/Hookkey.kl:system/usr/keylayout/Hookkey.kl \
+    vendor/lge/p970/proprietary/usr/keylayout/hub_synaptics_touch.kl:system/usr/keylayout/hub_synaptics_touch.kl \
+    vendor/lge/p970/proprietary/usr/keylayout/twl4030_pwrbutton.kl:system/usr/keylayout/twl4030_pwrbutton.kl \
+    vendor/lge/p970/proprietary/usr/keylayout/TWL4030_Keypad.kl:system/usr/keylayout/TWL4030_Keypad.kl
