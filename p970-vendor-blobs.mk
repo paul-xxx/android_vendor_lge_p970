@@ -18,6 +18,11 @@
 
 PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/app/RootExplorer.apk:system/app/RootExplorer.apk \
+    vendor/lge/p970/proprietary/app/Torch.apk:system/app/Torch.apk \
+    vendor/lge/p970/proprietary/bin/alsa_amixer:system/bin/alsa_amixer \
+    vendor/lge/p970/proprietary/bin/alsa_aplay:system/bin/alsa_aplay \
+    vendor/lge/p970/proprietary/bin/alsa_ctl:system/bin/alsa_ctl \
+    vendor/lge/p970/proprietary/bin/alsa_ucm:system/bin/alsa_ucm \
     vendor/lge/p970/proprietary/bin/cexec.out:system/bin/cexec.out \
     vendor/lge/p970/proprietary/bin/fw3a_core:system/bin/fw3a_core \
     vendor/lge/p970/proprietary/bin/glgps:system/bin/glgps \
@@ -25,10 +30,10 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/bin/init.vsnet:system/bin/init.vsnet \
     vendor/lge/p970/proprietary/bin/pvrsrvctl:system/bin/pvrsrvctl \
     vendor/lge/p970/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit \
-    vendor/lge/p970/proprietary/bin/pvrsrviniter:system/bin/pvrsrviniter \
     vendor/lge/p970/proprietary/bin/rild:system/bin/rild \
-    vendor/lge/p970/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
+    vendor/lge/p970/proprietary/bin/vold:system/bin/vold \
     vendor/lge/p970/proprietary/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd:system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd \
+    vendor/lge/p970/proprietary/etc/asound.conf:system/etc/asound.conf \
     vendor/lge/p970/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/lge/p970/proprietary/etc/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml \
     vendor/lge/p970/proprietary/etc/ipc_channels.config:system/etc/ipc_channels.config \
@@ -86,21 +91,19 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/egl/libEGL_POWERVR_SGX530_125.so:system/lib/egl/libEGL_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/lib/egl/libGLESv2_POWERVR_SGX530_125.so:system/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
-    vendor/lge/p970/proprietary/lib/firmware/fmc_init_1273.1.bts:system/lib/firmware/fmc_init_1273.1.bts \
-    vendor/lge/p970/proprietary/lib/firmware/fmc_init_1273.2.bts:system/lib/firmware/fmc_init_1273.2.bts \
-    vendor/lge/p970/proprietary/lib/firmware/fm_rx_init_1273.1.bts:system/lib/firmware/fm_rx_init_1273.1.bts \
-    vendor/lge/p970/proprietary/lib/firmware/fm_rx_init_1273.2.bts:system/lib/firmware/fm_rx_init_1273.2.bts \
-    vendor/lge/p970/proprietary/lib/firmware/fm_tx_init_1273.1.bts:system/lib/firmware/fm_tx_init_1273.1.bts \
-    vendor/lge/p970/proprietary/lib/firmware/fm_tx_init_1273.2.bts:system/lib/firmware/fm_tx_init_1273.2.bts \
-    vendor/lge/p970/proprietary/lib/firmware/TIInit_7.1.24.bts:system/lib/firmware/TIInit_7.1.24.bts \
-    vendor/lge/p970/proprietary/lib/firmware/TIInit_7.1.24.bts.PM.bts:system/lib/firmware/TIInit_7.1.24.bts.PM.bts \
-    vendor/lge/p970/proprietary/lib/firmware/TIInit_7.2.31.bts:system/lib/firmware/TIInit_7.2.31.bts \
+    vendor/lge/p970/proprietary/lib/hw/alsa.p970.so:system/lib/hw/alsa.p970.so \
+    vendor/lge/p970/proprietary/lib/hw/audio.primary.p970.so:system/lib/hw/audio.primary.p970.so \
     vendor/lge/p970/proprietary/lib/hw/gps.omap3.so:system/lib/hw/gps.omap3.so \
     vendor/lge/p970/proprietary/lib/hw/gralloc.omap3.so:system/lib/hw/gralloc.omap3.so \
     vendor/lge/p970/proprietary/lib/hw/sensors.omap3.so:system/lib/hw/sensors.omap3.so \
     vendor/lge/p970/proprietary/lib/lge-ril.so:system/lib/lge-ril.so \
+    vendor/lge/p970/proprietary/lib/liba2dp.so:system/lib/liba2dp.so \
     vendor/lge/p970/proprietary/lib/libaffw_2.0.so:system/lib/libaffw_2.0.so \
     vendor/lge/p970/proprietary/lib/libaf_lg_2.0.so:system/lib/libaf_lg_2.0.so \
+    vendor/lge/p970/proprietary/lib/libasound.so:system/lib/libasound.so \
+    vendor/lge/p970/proprietary/lib/libaudio.so:system/lib/libaudio.so \
+    vendor/lge/p970/proprietary/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
+    vendor/lge/p970/proprietary/lib/libaudiomodemgeneric.so:system/lib/libaudiomodemgeneric.so \
     vendor/lge/p970/proprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so \
     vendor/lge/p970/proprietary/lib/libIMGegl.so:system/lib/libIMGegl.so \
     vendor/lge/p970/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
@@ -108,6 +111,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/libmllite.so:system/lib/libmllite.so \
     vendor/lge/p970/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
     vendor/lge/p970/proprietary/lib/libmpl.so:system/lib/libmpl.so \
+    vendor/lge/p970/proprietary/lib/libOMX.ITTIAM.AAC.decode.so:system/lib/libOMX.ITTIAM.AAC.decode.so \
+    vendor/lge/p970/proprietary/lib/libOMX.ITTIAM.AAC.encode.so:system/lib/libOMX.ITTIAM.AAC.encode.so \
     vendor/lge/p970/proprietary/lib/libOMX.ITTIAM.MP3.decode.so:system/lib/libOMX.ITTIAM.MP3.decode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.720P.Decoder.so:system/lib/libOMX.TI.720P.Decoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.720P.Encoder.so:system/lib/libOMX.TI.720P.Encoder.so \
@@ -116,7 +121,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/libpvr2d.so:system/lib/libpvr2d.so \
     vendor/lge/p970/proprietary/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
     vendor/lge/p970/proprietary/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
-    vendor/lge/p970/proprietary/lib/lib_R2VS_ARM_GA_Library_for_Aries.so:system/lib/lib_R2VS_ARM_GA_Library_for_Aries.so \
     vendor/lge/p970/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/lge/p970/proprietary/lib/libsrv_init.so:system/lib/libsrv_init.so \
     vendor/lge/p970/proprietary/lib/libsrv_um.so:system/lib/libsrv_um.so \
@@ -125,4 +129,27 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/usr/keylayout/Hookkey.kl:system/usr/keylayout/Hookkey.kl \
     vendor/lge/p970/proprietary/usr/keylayout/hub_synaptics_touch.kl:system/usr/keylayout/hub_synaptics_touch.kl \
     vendor/lge/p970/proprietary/usr/keylayout/twl4030_pwrbutton.kl:system/usr/keylayout/twl4030_pwrbutton.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/TWL4030_Keypad.kl:system/usr/keylayout/TWL4030_Keypad.kl
+    vendor/lge/p970/proprietary/usr/keylayout/TWL4030_Keypad.kl:system/usr/keylayout/TWL4030_Keypad.kl \
+    vendor/lge/p970/proprietary/usr/share/alsa/cards/aliases.conf:system/usr/share/alsa/cards/aliases.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/init/00main:system/usr/share/alsa/init/00main \
+    vendor/lge/p970/proprietary/usr/share/alsa/init/default:system/usr/share/alsa/init/default \
+    vendor/lge/p970/proprietary/usr/share/alsa/init/hda:system/usr/share/alsa/init/hda \
+    vendor/lge/p970/proprietary/usr/share/alsa/init/help:system/usr/share/alsa/init/help \
+    vendor/lge/p970/proprietary/usr/share/alsa/init/info:system/usr/share/alsa/init/info \
+    vendor/lge/p970/proprietary/usr/share/alsa/init/test:system/usr/share/alsa/init/test \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/center_lfe.conf:system/usr/share/alsa/pcm/center_lfe.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/default.conf:system/usr/share/alsa/pcm/default.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/dmix.conf:system/usr/share/alsa/pcm/dmix.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/dpl.conf:system/usr/share/alsa/pcm/dpl.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/dsnoop.conf:system/usr/share/alsa/pcm/dsnoop.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/front.conf:system/usr/share/alsa/pcm/front.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/iec958.conf:system/usr/share/alsa/pcm/iec958.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/modem.conf:system/usr/share/alsa/pcm/modem.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/rear.conf:system/usr/share/alsa/pcm/rear.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/side.conf:system/usr/share/alsa/pcm/side.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/surround40.conf:system/usr/share/alsa/pcm/surround40.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/surround41.conf:system/usr/share/alsa/pcm/surround41.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf \
+    vendor/lge/p970/proprietary/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf
