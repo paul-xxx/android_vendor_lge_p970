@@ -1,4 +1,4 @@
-# Copyright (C) 2011 The Android Open Source Project
+# Copyright (C) 2012 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,28 +16,20 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 
+PRODUCT_COPY_FILES := \
+    vendor/lge/p970/proprietary/lib/libril.so:obj/lib/libril.so \
+    vendor/lge/p970/proprietary/lib/libaudio.so:obj/lib/libaudio.so
+
 PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/app/RootExplorer.apk:system/app/RootExplorer.apk \
     vendor/lge/p970/proprietary/app/Torch.apk:system/app/Torch.apk \
-    vendor/lge/p970/proprietary/bin/alsa_amixer:system/bin/alsa_amixer \
-    vendor/lge/p970/proprietary/bin/alsa_aplay:system/bin/alsa_aplay \
-    vendor/lge/p970/proprietary/bin/alsa_ctl:system/bin/alsa_ctl \
-    vendor/lge/p970/proprietary/bin/alsa_ucm:system/bin/alsa_ucm \
-    vendor/lge/p970/proprietary/bin/cexec.out:system/bin/cexec.out \
-    vendor/lge/p970/proprietary/bin/fw3a_core:system/bin/fw3a_core \
     vendor/lge/p970/proprietary/bin/glgps:system/bin/glgps \
-    vendor/lge/p970/proprietary/bin/immvibed:system/bin/immvibed \
-    vendor/lge/p970/proprietary/bin/init.vsnet:system/bin/init.vsnet \
     vendor/lge/p970/proprietary/bin/pvrsrvctl:system/bin/pvrsrvctl \
     vendor/lge/p970/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit \
     vendor/lge/p970/proprietary/bin/rild:system/bin/rild \
-    vendor/lge/p970/proprietary/bin/vold:system/bin/vold \
     vendor/lge/p970/proprietary/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd:system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd \
-    vendor/lge/p970/proprietary/etc/asound.conf:system/etc/asound.conf \
-    vendor/lge/p970/proprietary/etc/gps.conf:system/etc/gps.conf \
-    vendor/lge/p970/proprietary/etc/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml \
-    vendor/lge/p970/proprietary/etc/ipc_channels.config:system/etc/ipc_channels.config \
-    vendor/lge/p970/proprietary/lib/dsp/720p_divx_mp4vdec_sn.dll64P:system/lib/dsp/720p_divx_mp4vdec_sn.dll64P \
+    vendor/lge/p970/proprietary/etc/wifi/fw_bcm4329.bin:system/etc/wifi/fw_bcm4329.bin \
+    vendor/lge/p970/proprietary/etc/wifi/fw_bcm4329_ap.bin:system/etc/wifi/fw_bcm4329_ap.bin \
     vendor/lge/p970/proprietary/lib/dsp/720p_h264vdec_sn.dll64P:system/lib/dsp/720p_h264vdec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/720p_h264venc_sn.dll64P:system/lib/dsp/720p_h264venc_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/720p_mp4vdec_sn.dll64P:system/lib/dsp/720p_mp4vdec_sn.dll64P \
@@ -65,7 +57,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/dsp/ilbcdec_sn.dll64P:system/lib/dsp/ilbcdec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/ilbcenc_sn.dll64P:system/lib/dsp/ilbcenc_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/ipp_sn.dll64P:system/lib/dsp/ipp_sn.dll64P \
-    vendor/lge/p970/proprietary/lib/dsp/ittiam_divx3vdec_sn.dll64P:system/lib/dsp/ittiam_divx3vdec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/jpegdec_sn.dll64P:system/lib/dsp/jpegdec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/jpegenc_sn.dll64P:system/lib/dsp/jpegenc_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/m4venc_sn.dll64P:system/lib/dsp/m4venc_sn.dll64P \
@@ -91,36 +82,39 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/egl/libEGL_POWERVR_SGX530_125.so:system/lib/egl/libEGL_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/lib/egl/libGLESv2_POWERVR_SGX530_125.so:system/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
-    vendor/lge/p970/proprietary/lib/hw/alsa.p970.so:system/lib/hw/alsa.p970.so \
-    vendor/lge/p970/proprietary/lib/hw/audio.primary.p970.so:system/lib/hw/audio.primary.p970.so \
-    vendor/lge/p970/proprietary/lib/hw/gps.omap3.so:system/lib/hw/gps.omap3.so \
-    vendor/lge/p970/proprietary/lib/hw/gralloc.omap3.so:system/lib/hw/gralloc.omap3.so \
-    vendor/lge/p970/proprietary/lib/hw/sensors.omap3.so:system/lib/hw/sensors.omap3.so \
     vendor/lge/p970/proprietary/lib/lge-ril.so:system/lib/lge-ril.so \
     vendor/lge/p970/proprietary/lib/liba2dp.so:system/lib/liba2dp.so \
     vendor/lge/p970/proprietary/lib/libaffw_2.0.so:system/lib/libaffw_2.0.so \
     vendor/lge/p970/proprietary/lib/libaf_lg_2.0.so:system/lib/libaf_lg_2.0.so \
     vendor/lge/p970/proprietary/lib/libasound.so:system/lib/libasound.so \
     vendor/lge/p970/proprietary/lib/libaudio.so:system/lib/libaudio.so \
-    vendor/lge/p970/proprietary/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
     vendor/lge/p970/proprietary/lib/libaudiomodemgeneric.so:system/lib/libaudiomodemgeneric.so \
     vendor/lge/p970/proprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so \
     vendor/lge/p970/proprietary/lib/libIMGegl.so:system/lib/libIMGegl.so \
-    vendor/lge/p970/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
     vendor/lge/p970/proprietary/lib/libini.so:system/lib/libini.so \
     vendor/lge/p970/proprietary/lib/libmllite.so:system/lib/libmllite.so \
     vendor/lge/p970/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
     vendor/lge/p970/proprietary/lib/libmpl.so:system/lib/libmpl.so \
+    vendor/lge/p970/proprietary/lib/libomap_mm_library_jni.so:system/lib/libomap_mm_library_jni.so \
     vendor/lge/p970/proprietary/lib/libOMX.ITTIAM.AAC.decode.so:system/lib/libOMX.ITTIAM.AAC.decode.so \
     vendor/lge/p970/proprietary/lib/libOMX.ITTIAM.AAC.encode.so:system/lib/libOMX.ITTIAM.AAC.encode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.ITTIAM.MP3.decode.so:system/lib/libOMX.ITTIAM.MP3.decode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.720P.Decoder.so:system/lib/libOMX.TI.720P.Decoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.720P.Encoder.so:system/lib/libOMX.TI.720P.Encoder.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.G711.decode.so:system/lib/libOMX.TI.G711.decode.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.G711.encode.so:system/lib/libOMX.TI.G711.encode.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.G722.decode.so:system/lib/libOMX.TI.G722.decode.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.G722.encode.so:system/lib/libOMX.TI.G722.encode.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.G726.decode.so:system/lib/libOMX.TI.G726.decode.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.G726.encode.so:system/lib/libOMX.TI.G726.encode.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.G729.decode.so:system/lib/libOMX.TI.G729.decode.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.G729.encode.so:system/lib/libOMX.TI.G729.encode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.h264.splt.Encoder.so:system/lib/libOMX.TI.h264.splt.Encoder.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.ILBC.decode.so:system/lib/libOMX.TI.ILBC.decode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.mp4.splt.Encoder.so:system/lib/libOMX.TI.mp4.splt.Encoder.so \
     vendor/lge/p970/proprietary/lib/libpvr2d.so:system/lib/libpvr2d.so \
     vendor/lge/p970/proprietary/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
     vendor/lge/p970/proprietary/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
+    vendor/lge/p970/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/lge/p970/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/lge/p970/proprietary/lib/libsrv_init.so:system/lib/libsrv_init.so \
     vendor/lge/p970/proprietary/lib/libsrv_um.so:system/lib/libsrv_um.so \
@@ -131,12 +125,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/usr/keylayout/twl4030_pwrbutton.kl:system/usr/keylayout/twl4030_pwrbutton.kl \
     vendor/lge/p970/proprietary/usr/keylayout/TWL4030_Keypad.kl:system/usr/keylayout/TWL4030_Keypad.kl \
     vendor/lge/p970/proprietary/usr/share/alsa/cards/aliases.conf:system/usr/share/alsa/cards/aliases.conf \
-    vendor/lge/p970/proprietary/usr/share/alsa/init/00main:system/usr/share/alsa/init/00main \
-    vendor/lge/p970/proprietary/usr/share/alsa/init/default:system/usr/share/alsa/init/default \
-    vendor/lge/p970/proprietary/usr/share/alsa/init/hda:system/usr/share/alsa/init/hda \
-    vendor/lge/p970/proprietary/usr/share/alsa/init/help:system/usr/share/alsa/init/help \
-    vendor/lge/p970/proprietary/usr/share/alsa/init/info:system/usr/share/alsa/init/info \
-    vendor/lge/p970/proprietary/usr/share/alsa/init/test:system/usr/share/alsa/init/test \
     vendor/lge/p970/proprietary/usr/share/alsa/pcm/center_lfe.conf:system/usr/share/alsa/pcm/center_lfe.conf \
     vendor/lge/p970/proprietary/usr/share/alsa/pcm/default.conf:system/usr/share/alsa/pcm/default.conf \
     vendor/lge/p970/proprietary/usr/share/alsa/pcm/dmix.conf:system/usr/share/alsa/pcm/dmix.conf \
