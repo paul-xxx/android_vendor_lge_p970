@@ -23,7 +23,9 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/app/RootExplorer.apk:system/app/RootExplorer.apk \
     vendor/lge/p970/proprietary/app/Torch.apk:system/app/Torch.apk \
+    vendor/lge/p970/proprietary/bin/cexec.out:system/bin/cexec.out \
     vendor/lge/p970/proprietary/bin/glgps:system/bin/glgps \
+    vendor/lge/p970/proprietary/bin/immvibed:system/bin/immvibed \
     vendor/lge/p970/proprietary/bin/pvrsrvctl:system/bin/pvrsrvctl \
     vendor/lge/p970/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit \
     vendor/lge/p970/proprietary/bin/rild:system/bin/rild \
@@ -82,6 +84,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/egl/libEGL_POWERVR_SGX530_125.so:system/lib/egl/libEGL_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/lib/egl/libGLESv2_POWERVR_SGX530_125.so:system/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
+    vendor/lge/p970/proprietary/lib/hw/alsa.omap3.so:system/lib/hw/alsa.omap3.so \
+    vendor/lge/p970/proprietary/lib/hw/audio.primary.omap3.so:system/lib/hw/audio.primary.omap3.so \
+    vendor/lge/p970/proprietary/lib/hw/gps.omap3.so:system/lib/hw/gps.omap3.so \
+    vendor/lge/p970/proprietary/lib/hw/gralloc.omap3.so:system/lib/hw/gralloc.omap3.so \
+    vendor/lge/p970/proprietary/lib/hw/sensors.omap3.so:system/lib/hw/sensors.omap3.so \
     vendor/lge/p970/proprietary/lib/lge-ril.so:system/lib/lge-ril.so \
     vendor/lge/p970/proprietary/lib/liba2dp.so:system/lib/liba2dp.so \
     vendor/lge/p970/proprietary/lib/libaffw_2.0.so:system/lib/libaffw_2.0.so \
@@ -91,6 +98,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/libaudiomodemgeneric.so:system/lib/libaudiomodemgeneric.so \
     vendor/lge/p970/proprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so \
     vendor/lge/p970/proprietary/lib/libIMGegl.so:system/lib/libIMGegl.so \
+    vendor/lge/p970/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
     vendor/lge/p970/proprietary/lib/libini.so:system/lib/libini.so \
     vendor/lge/p970/proprietary/lib/libmllite.so:system/lib/libmllite.so \
     vendor/lge/p970/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
@@ -109,7 +117,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/libOMX.TI.G729.decode.so:system/lib/libOMX.TI.G729.decode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.G729.encode.so:system/lib/libOMX.TI.G729.encode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.h264.splt.Encoder.so:system/lib/libOMX.TI.h264.splt.Encoder.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.ILBC.decode.so:system/lib/libOMX.TI.ILBC.decode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.mp4.splt.Encoder.so:system/lib/libOMX.TI.mp4.splt.Encoder.so \
     vendor/lge/p970/proprietary/lib/libpvr2d.so:system/lib/libpvr2d.so \
     vendor/lge/p970/proprietary/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
