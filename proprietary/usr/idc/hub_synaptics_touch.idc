@@ -13,7 +13,7 @@
 # limitations under the License.
 
 #
-# Input Device Calibration File for the iproj touch screen.
+# Input Device Calibration File for the B touch screen.
 #
 
 # Basic Parameters
@@ -42,3 +42,4 @@ keyboard.layout = hub_synaptics_touch
 keyboard.characterMap = hub_synaptics_touch
 keyboard.orientationAware = 1
 keyboard.builtIn = 0
+
