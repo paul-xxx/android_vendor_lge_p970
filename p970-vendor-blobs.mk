@@ -16,7 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/app/RootExplorer.apk:system/app/RootExplorer.apk \
-    vendor/lge/p970/proprietary/app/Torch.apk:system/app/Torch.apk \
     vendor/lge/p970/proprietary/bin/cexec.out:system/bin/cexec.out \
     vendor/lge/p970/proprietary/bin/fw3a_core:system/bin/fw3a_core \
     vendor/lge/p970/proprietary/bin/glgps:system/bin/glgps \
@@ -102,7 +101,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/libOMX.TI.720P.Decoder.so:system/lib/libOMX.TI.720P.Decoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.720P.Encoder.so:system/lib/libOMX.TI.720P.Encoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.AAC.decode.so:system/lib/libOMX.TI.AAC.decode.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.AAC.encode.so:system/lib/libOMX.TI.AAC.encode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.AMR.decode.so:system/lib/libOMX.TI.AMR.decode.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.AMR.encode.so:system/lib/libOMX.TI.AMR.encode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.G711.decode.so:system/lib/libOMX.TI.G711.decode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.G711.encode.so:system/lib/libOMX.TI.G711.encode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.G722.decode.so:system/lib/libOMX.TI.G722.decode.so \
@@ -117,8 +118,12 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/libOMX.TI.JPEG.encoder.so:system/lib/libOMX.TI.JPEG.encoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.mp4.splt.Encoder.so:system/lib/libOMX.TI.mp4.splt.Encoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.MP3.decode.so:system/lib/libOMX.TI.MP3.decode.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.Video.Decoder.so:system/lib/libOMX.TI.Video.Decoder.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.Video.encoder.so:system/lib/libOMX.TI.Video.encoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.WBAMR.decode.so:system/lib/libOMX.TI.WBAMR.decode.so \
+    vendor/lge/p970/proprietary/lib/libOMX.TI.WBAMR.encode.so:system/lib/libOMX.TI.WBAMR.encode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.WMA.decode.so:system/lib/libOMX.TI.WMA.decode.so \
+    vendor/lge/p970/proprietary/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
     vendor/lge/p970/proprietary/lib/libPERF.so:system/lib/libPERF.so \
     vendor/lge/p970/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/lge/p970/proprietary/lib/libtiutils.so:system/lib/libtiutils.so \
