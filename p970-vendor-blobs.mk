@@ -16,15 +16,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/app/RootExplorer.apk:system/app/RootExplorer.apk \
-    vendor/lge/p970/proprietary/bin/cexec.out:system/bin/cexec.out \
     vendor/lge/p970/proprietary/bin/fw3a_core:system/bin/fw3a_core \
-    vendor/lge/p970/proprietary/bin/glgps:system/bin/glgps \
-    vendor/lge/p970/proprietary/bin/pvrsrvctl:system/bin/pvrsrvctl \
-    vendor/lge/p970/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit \
-    vendor/lge/p970/proprietary/bin/rild:system/bin/rild \
-    vendor/lge/p970/proprietary/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd:system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd \
-    vendor/lge/p970/proprietary/etc/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
-    vendor/lge/p970/proprietary/etc/firmware/fw_bcm4329_ap.bin:system/etc/firmware/fw_bcm4329_ap.bin \
     vendor/lge/p970/proprietary/etc/omapcam/cid43_imx072_awb_tuning.bin:system/etc/omapcam/cid43_imx072_awb_tuning.bin \
     vendor/lge/p970/proprietary/etc/omapcam/fw3a.conf:system/etc/omapcam/fw3a.conf \
     vendor/lge/p970/proprietary/etc/omapcam/imx072.rev:system/etc/omapcam/imx072.rev \
@@ -80,70 +72,55 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/dsp/wmadec_sn.dll64P:system/lib/dsp/wmadec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/wmv9dec_sn.dll64P:system/lib/dsp/wmv9dec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/yuvconvert.l64p:system/lib/dsp/yuvconvert.l64p \
-    vendor/lge/p970/proprietary/lib/hw/audio.primary.omap3.so:system/lib/hw/audio.primary.omap3.so \
-    vendor/lge/p970/proprietary/lib/hw/audio_policy.omap3.so:system/lib/hw/audio_policy.omap3.so \
     vendor/lge/p970/proprietary/lib/hw/camera.omap3.so:system/lib/hw/camera.omap3.so \
-    vendor/lge/p970/proprietary/lib/hw/gps.omap3.so:system/lib/hw/gps.omap3.so \
-    vendor/lge/p970/proprietary/lib/hw/sensors.omap3.so:system/lib/hw/sensors.omap3.so \
-    vendor/lge/p970/proprietary/lib/lge-ril.so:system/lib/lge-ril.so \
     vendor/lge/p970/proprietary/lib/libaffw_2.0.so:system/lib/libaffw_2.0.so \
     vendor/lge/p970/proprietary/lib/libaf_lg_2.0.so:system/lib/libaf_lg_2.0.so \
-    vendor/lge/p970/proprietary/lib/libbridge.so:system/lib/libbridge.so \
     vendor/lge/p970/proprietary/lib/libcapl.so:system/lib/libcapl.so \
     vendor/lge/p970/proprietary/lib/libicamera.so:system/lib/libicamera.so \
     vendor/lge/p970/proprietary/lib/libicapture.so:system/lib/libicapture.so \
     vendor/lge/p970/proprietary/lib/libImagePipeline.so:system/lib/libImagePipeline.so \
-    vendor/lge/p970/proprietary/lib/libini.so:system/lib/libini.so \
-    vendor/lge/p970/proprietary/lib/libion.so:system/lib/libion.so \
-    vendor/lge/p970/proprietary/lib/libLCML.so:system/lib/libLCML.so \
     vendor/lge/p970/proprietary/lib/libOMX.ITTIAM.AAC.decode.so:system/lib/libOMX.ITTIAM.AAC.decode.so \
     vendor/lge/p970/proprietary/lib/libOMX.ITTIAM.AAC.encode.so:system/lib/libOMX.ITTIAM.AAC.encode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.720P.Decoder.so:system/lib/libOMX.TI.720P.Decoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.720P.Encoder.so:system/lib/libOMX.TI.720P.Encoder.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.AAC.decode.so:system/lib/libOMX.TI.AAC.decode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.AAC.encode.so:system/lib/libOMX.TI.AAC.encode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.AMR.decode.so:system/lib/libOMX.TI.AMR.decode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.AMR.encode.so:system/lib/libOMX.TI.AMR.encode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.G711.decode.so:system/lib/libOMX.TI.G711.decode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.G711.encode.so:system/lib/libOMX.TI.G711.encode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.G722.decode.so:system/lib/libOMX.TI.G722.decode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.G722.encode.so:system/lib/libOMX.TI.G722.encode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.G726.decode.so:system/lib/libOMX.TI.G726.decode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.G726.encode.so:system/lib/libOMX.TI.G726.encode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.G729.decode.so:system/lib/libOMX.TI.G729.decode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.G729.encode.so:system/lib/libOMX.TI.G729.encode.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.h264.splt.Encoder.so:system/lib/libOMX.TI.h264.splt.Encoder.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.ILBC.decode.so:system/lib/libOMX.TI.ILBC.decode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.ILBC.encode.so:system/lib/libOMX.TI.ILBC.encode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.JPEG.encoder.so:system/lib/libOMX.TI.JPEG.encoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.mp4.splt.Encoder.so:system/lib/libOMX.TI.mp4.splt.Encoder.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.MP3.decode.so:system/lib/libOMX.TI.MP3.decode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.Video.Decoder.so:system/lib/libOMX.TI.Video.Decoder.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.Video.encoder.so:system/lib/libOMX.TI.Video.encoder.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.WBAMR.decode.so:system/lib/libOMX.TI.WBAMR.decode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.WBAMR.encode.so:system/lib/libOMX.TI.WBAMR.encode.so \
-    vendor/lge/p970/proprietary/lib/libOMX.TI.WMA.decode.so:system/lib/libOMX.TI.WMA.decode.so \
-    vendor/lge/p970/proprietary/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
-    vendor/lge/p970/proprietary/lib/libPERF.so:system/lib/libPERF.so \
-    vendor/lge/p970/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/lge/p970/proprietary/lib/libtiutils.so:system/lib/libtiutils.so \
     vendor/lge/p970/proprietary/lib/libyuvfastconvert.so:system/lib/libyuvfastconvert.so \
-    vendor/lge/p970/proprietary/usr/idc/hub_synaptics_touch.idc:system/usr/idc/hub_synaptics_touch.idc \
-    vendor/lge/p970/proprietary/usr/keylayout/Hookkey.kl:system/usr/keylayout/Hookkey.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/hub_synaptics_touch.kl:system/usr/keylayout/hub_synaptics_touch.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/twl4030_pwrbutton.kl:system/usr/keylayout/twl4030_pwrbutton.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/TWL4030_Keypad.kl:system/usr/keylayout/TWL4030_Keypad.kl \
+    vendor/lge/p970/proprietary/bin/glgps:system/bin/glgps \
+    vendor/lge/p970/proprietary/bin/rild:system/bin/rild \
+    vendor/lge/p970/proprietary/lib/hw/gps.omap3.so:system/lib/hw/gps.omap3.so \
+    vendor/lge/p970/proprietary/lib/lge-ril.so:system/lib/lge-ril.so \
+    vendor/lge/p970/proprietary/lib/libini.so:system/lib/libini.so \
+    vendor/lge/p970/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/lge/p970/proprietary/lib/hw/sensors.omap3.so:system/lib/hw/sensors.omap3.so \
+    vendor/lge/p970/proprietary/lib/libmllite.so:system/lib/libmllite.so \
+    vendor/lge/p970/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
+    vendor/lge/p970/proprietary/lib/libmpl.so:system/lib/libmpl.so \
+    vendor/lge/p970/proprietary/lib/hw/audio.primary.omap3.so:system/lib/hw/audio.primary.omap3.so \
+    vendor/lge/p970/proprietary/lib/hw/audio_policy.omap3.so:system/lib/hw/audio_policy.omap3.so \
+    vendor/lge/p970/proprietary/bin/pvrsrvctl:system/bin/pvrsrvctl \
+    vendor/lge/p970/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit \
     vendor/lge/p970/proprietary/vendor/lib/egl/libEGL_POWERVR_SGX530_125.so:system/vendor/lib/egl/libEGL_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/vendor/lib/egl/libGLESv2_POWERVR_SGX530_125.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/vendor/lib/hw/gralloc.omap3.so:system/vendor/lib/hw/gralloc.omap3.so \
     vendor/lge/p970/proprietary/vendor/lib/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
     vendor/lge/p970/proprietary/vendor/lib/libIMGegl.so:system/vendor/lib/libIMGegl.so \
-    vendor/lge/p970/proprietary/vendor/lib/liblvverx.so:system/vendor/lib/liblvverx.so \
-    vendor/lge/p970/proprietary/vendor/lib/liblvvetx.so:system/vendor/lib/liblvvetx.so \
     vendor/lge/p970/proprietary/vendor/lib/libpvr2d.so:system/vendor/lib/libpvr2d.so \
     vendor/lge/p970/proprietary/vendor/lib/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
     vendor/lge/p970/proprietary/vendor/lib/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
     vendor/lge/p970/proprietary/vendor/lib/libsrv_init.so:system/vendor/lib/libsrv_init.so \
     vendor/lge/p970/proprietary/vendor/lib/libsrv_um.so:system/vendor/lib/libsrv_um.so \
-    vendor/lge/p970/proprietary/vendor/lib/libusc.so:system/vendor/lib/libusc.so
+    vendor/lge/p970/proprietary/vendor/lib/libusc.so:system/vendor/lib/libusc.so \
+    vendor/lge/p970/proprietary/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd:system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd \
+    vendor/lge/p970/proprietary/etc/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
+    vendor/lge/p970/proprietary/etc/firmware/fw_bcm4329_ap.bin:system/etc/firmware/fw_bcm4329_ap.bin \
+    vendor/lge/p970/proprietary/usr/keylayout/Hookkey.kl:system/usr/keylayout/Hookkey.kl \
+    vendor/lge/p970/proprietary/usr/keylayout/hub_synaptics_touch.kl:system/usr/keylayout/hub_synaptics_touch.kl \
+    vendor/lge/p970/proprietary/usr/keylayout/twl4030_pwrbutton.kl:system/usr/keylayout/twl4030_pwrbutton.kl \
+    vendor/lge/p970/proprietary/usr/keylayout/TWL4030_Keypad.kl:system/usr/keylayout/TWL4030_Keypad.kl \
+    vendor/lge/p970/proprietary/usr/idc/hub_synaptics_touch.idc:system/usr/idc/hub_synaptics_touch.idc \
+    vendor/lge/p970/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/lge/p970/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/lge/p970/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/lge/p970/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so
