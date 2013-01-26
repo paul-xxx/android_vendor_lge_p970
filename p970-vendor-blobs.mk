@@ -17,6 +17,8 @@
 PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/bin/fw3a_core:system/bin/fw3a_core \
     vendor/lge/p970/proprietary/bin/glgps:system/bin/glgps \
+    vendor/lge/p970/proprietary/bin/init.vsnet:system/bin/init.vsnet \
+    vendor/lge/p970/proprietary/bin/init.vsnet-down:system/bin/init.vsnet-down \
     vendor/lge/p970/proprietary/bin/pvrsrvctl:system/bin/pvrsrvctl \
     vendor/lge/p970/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit \
     vendor/lge/p970/proprietary/bin/rild:system/bin/rild \
@@ -27,6 +29,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/etc/omapcam/fw3a.conf:system/etc/omapcam/fw3a.conf \
     vendor/lge/p970/proprietary/etc/omapcam/imx072.rev:system/etc/omapcam/imx072.rev \
     vendor/lge/p970/proprietary/etc/omapcam/imx072_dtp.dat:system/etc/omapcam/imx072_dtp.dat \
+    vendor/lge/p970/proprietary/etc/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml \
+    vendor/lge/p970/proprietary/etc/ipc_channels.config:system/etc/ipc_channels.config \
     vendor/lge/p970/proprietary/lib/dsp/720p_divx_mp4vdec_sn.dll64P:system/lib/dsp/720p_divx_mp4vdec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/720p_h264vdec_sn.dll64P:system/lib/dsp/720p_h264vdec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/720p_h264venc_sn.dll64P:system/lib/dsp/720p_h264venc_sn.dll64P \
@@ -107,7 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/usr/keylayout/hub_synaptics_touch.kl:system/usr/keylayout/hub_synaptics_touch.kl \
     vendor/lge/p970/proprietary/usr/keylayout/twl4030_pwrbutton.kl:system/usr/keylayout/twl4030_pwrbutton.kl \
     vendor/lge/p970/proprietary/usr/keylayout/TWL4030_Keypad.kl:system/usr/keylayout/TWL4030_Keypad.kl \
-    vendor/lge/p970/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/lge/p970/proprietary/vendor/lib/egl/libEGL_POWERVR_SGX530_125.so:system/vendor/lib/egl/libEGL_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/vendor/lib/egl/libGLESv2_POWERVR_SGX530_125.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
@@ -119,7 +122,4 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/vendor/lib/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
     vendor/lge/p970/proprietary/vendor/lib/libsrv_init.so:system/vendor/lib/libsrv_init.so \
     vendor/lge/p970/proprietary/vendor/lib/libsrv_um.so:system/vendor/lib/libsrv_um.so \
-    vendor/lge/p970/proprietary/vendor/lib/libusc.so:system/vendor/lib/libusc.so \
-    vendor/lge/p970/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    vendor/lge/p970/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/lge/p970/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so
+    vendor/lge/p970/proprietary/vendor/lib/libusc.so:system/vendor/lib/libusc.so
