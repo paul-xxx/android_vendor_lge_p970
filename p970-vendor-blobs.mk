@@ -23,12 +23,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit \
     vendor/lge/p970/proprietary/bin/rild:system/bin/rild \
     vendor/lge/p970/proprietary/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd:system/etc/firmware/BCM43291A0_003.001.013.0066.xxxx_B-Project.hcd \
-    vendor/lge/p970/proprietary/etc/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
-    vendor/lge/p970/proprietary/etc/firmware/fw_bcm4329_ap.bin:system/etc/firmware/fw_bcm4329_ap.bin \
     vendor/lge/p970/proprietary/etc/omapcam/cid43_imx072_awb_tuning.bin:system/etc/omapcam/cid43_imx072_awb_tuning.bin \
     vendor/lge/p970/proprietary/etc/omapcam/fw3a.conf:system/etc/omapcam/fw3a.conf \
     vendor/lge/p970/proprietary/etc/omapcam/imx072.rev:system/etc/omapcam/imx072.rev \
     vendor/lge/p970/proprietary/etc/omapcam/imx072_dtp.dat:system/etc/omapcam/imx072_dtp.dat \
+    vendor/lge/p970/proprietary/etc/asound.conf:system/etc/asound.conf \
     vendor/lge/p970/proprietary/etc/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml \
     vendor/lge/p970/proprietary/etc/ipc_channels.config:system/etc/ipc_channels.config \
     vendor/lge/p970/proprietary/lib/dsp/720p_divx_mp4vdec_sn.dll64P:system/lib/dsp/720p_divx_mp4vdec_sn.dll64P \
@@ -82,15 +81,18 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/dsp/wmadec_sn.dll64P:system/lib/dsp/wmadec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/wmv9dec_sn.dll64P:system/lib/dsp/wmv9dec_sn.dll64P \
     vendor/lge/p970/proprietary/lib/dsp/yuvconvert.l64p:system/lib/dsp/yuvconvert.l64p \
-    vendor/lge/p970/proprietary/lib/hw/audio.primary.omap3.so:system/lib/hw/audio.primary.omap3.so \
-    vendor/lge/p970/proprietary/lib/hw/audio_policy.omap3.so:system/lib/hw/audio_policy.omap3.so \
+    vendor/lge/p970/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
+    vendor/lge/p970/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
     vendor/lge/p970/proprietary/lib/hw/camera.omap3.so:system/lib/hw/camera.omap3.so \
     vendor/lge/p970/proprietary/lib/hw/gps.omap3.so:system/lib/hw/gps.omap3.so \
     vendor/lge/p970/proprietary/lib/hw/sensors.omap3.so:system/lib/hw/sensors.omap3.so \
     vendor/lge/p970/proprietary/lib/lge-ril.so:system/lib/lge-ril.so \
     vendor/lge/p970/proprietary/lib/libaffw_2.0.so:system/lib/libaffw_2.0.so \
     vendor/lge/p970/proprietary/lib/libaf_lg_2.0.so:system/lib/libaf_lg_2.0.so \
+    vendor/lge/p970/proprietary/lib/libbridge.so:system/lib/libbridge.so \
     vendor/lge/p970/proprietary/lib/libcapl.so:system/lib/libcapl.so \
+    vendor/lge/p970/proprietary/lib/libexif.so:system/lib/libexif.so \
+    vendor/lge/p970/proprietary/lib/libexif_jni.so:system/lib/libexif_jni.so \
     vendor/lge/p970/proprietary/lib/libicamera.so:system/lib/libicamera.so \
     vendor/lge/p970/proprietary/lib/libicapture.so:system/lib/libicapture.so \
     vendor/lge/p970/proprietary/lib/libImagePipeline.so:system/lib/libImagePipeline.so \
@@ -105,18 +107,19 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p970/proprietary/lib/libOMX.TI.h264.splt.Encoder.so:system/lib/libOMX.TI.h264.splt.Encoder.so \
     vendor/lge/p970/proprietary/lib/libOMX.TI.mp4.splt.Encoder.so:system/lib/libOMX.TI.mp4.splt.Encoder.so \
     vendor/lge/p970/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/lge/p970/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
     vendor/lge/p970/proprietary/lib/libyuvfastconvert.so:system/lib/libyuvfastconvert.so \
     vendor/lge/p970/proprietary/usr/idc/hub_synaptics_touch.idc:system/usr/idc/hub_synaptics_touch.idc \
     vendor/lge/p970/proprietary/usr/keylayout/Hookkey.kl:system/usr/keylayout/Hookkey.kl \
     vendor/lge/p970/proprietary/usr/keylayout/hub_synaptics_touch.kl:system/usr/keylayout/hub_synaptics_touch.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/twl4030_pwrbutton.kl:system/usr/keylayout/twl4030_pwrbutton.kl \
-    vendor/lge/p970/proprietary/usr/keylayout/TWL4030_Keypad.kl:system/usr/keylayout/TWL4030_Keypad.kl \
     vendor/lge/p970/proprietary/vendor/lib/egl/libEGL_POWERVR_SGX530_125.so:system/vendor/lib/egl/libEGL_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/vendor/lib/egl/libGLESv2_POWERVR_SGX530_125.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
     vendor/lge/p970/proprietary/vendor/lib/hw/gralloc.omap3.so:system/vendor/lib/hw/gralloc.omap3.so \
     vendor/lge/p970/proprietary/vendor/lib/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
     vendor/lge/p970/proprietary/vendor/lib/libIMGegl.so:system/vendor/lib/libIMGegl.so \
+    vendor/lge/p970/proprietary/vendor/lib/liblvverx.so:system/vendor/lib/liblvverx.so \
+    vendor/lge/p970/proprietary/vendor/lib/liblvvetx.so:system/vendor/lib/liblvvetx.so \
     vendor/lge/p970/proprietary/vendor/lib/libpvr2d.so:system/vendor/lib/libpvr2d.so \
     vendor/lge/p970/proprietary/vendor/lib/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
     vendor/lge/p970/proprietary/vendor/lib/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
